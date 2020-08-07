@@ -3,6 +3,10 @@ module.exports = {
     title: `Polyglot Engineer`,
     description: `WebSite for the Polyglot Engineer channel`,
     author: `@davidfekke`,
+    twitterHandle: '@davidfekke',
+    url: 'https://polyglotengineer.com',
+    siteUrl: 'https://polyglotengineer.com',
+    facebookAppId: '833529826996398'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
