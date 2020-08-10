@@ -1,88 +1,42 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
-import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
-        }
-      }
-    `
-  )
+export default (props) => {
+    const { data, facebook } = props;
+    const postTitle = (data || {}).title;
+    const postDescription = (data || {}).description;
+    const postCover = (data || {}).cover;
+    const postSlug = (data || {}).slug;
 
-  const metaDescription = description || site.siteMetadata.description
+    const title = postTitle || '';
+    const description = postDescription || '';
+    const image = postCover ? postCover : 'cardinal.jpg';
+    const url = postSlug;
+    const author = (data || {}).twitterHandle;
 
-  return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    />
-  )
+    const metaArray = [
+        { 'charSet': 'utf-8'},
+        { 'name': 'description', 'content': description },
+        { 'property': 'og:url',  'content': url },
+        { 'property': 'og:title',  'content': title },
+        { 'property': 'og:description',  'content': description },
+        { 'property': 'og:image',  'content': image },
+        { 'property': 'og:type',  'content': 'website' },
+        { 'property': 'fb:app_id',  'content': facebook.appId },
+        { 'name': 'twitter:card', 'content': 'summary' },
+        { 'name': 'twitter:creator', 'content': author }
+    ];
+    return (
+
+        <Helmet
+            meta={metaArray}
+            title={postTitle}
+            link={[
+                { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic'},
+                { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'},
+                { rel: 'icon', sizes: '16x16', type: 'image/png', href: `/favicon16.png` },
+                { rel: 'icon', sizes: '32x32', type: 'image/png', href: `/favicon32.png` },
+                { rel: 'shortcut icon', type: 'image/png', href: `/favicon64.png` }
+            ]} />
+    )
 }
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-}
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
-}
-
-export default SEO
