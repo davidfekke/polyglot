@@ -6,9 +6,9 @@ import Logo from "../images/pelogo.png"
 import styles from "./navbar.module.css"
 
 const menuData = [
-    { title: 'Home', link: ''},
-    { title: 'About', link: 'about' },
-    { title: 'Contact', link: 'contact' }
+    { title: 'Home', link: '/'},
+    { title: 'About', link: '/about/' },
+    { title: 'Contact', link: '/contact/' }
 ];
 
 const MenuItem = props => (
