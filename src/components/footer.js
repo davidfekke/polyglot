@@ -12,10 +12,10 @@ export default () => {
                 <div style={{ paddingTop: '1rem', paddingBottom: '2rem' }}>
                     <div style={{ textAlign: 'center', height: '3rem', paddingTop: '20px', paddingBottom: '10px',  }}>
                         <a href="https://twitter.com/davidfekke" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'black' }}><FaTwitter size={32} style={{ padding: '5px' }} /></a>
-                        <a href="https://www.facebook.com/David-Fekke-LLC-178889285498948/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'black' }}><FaFacebook size={32}  style={{ padding: '5px' }} /> </a>
+                        <a href="https://www.facebook.com/groups/1218052191881014/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'black' }}><FaFacebook size={32}  style={{ padding: '5px' }} /> </a>
                         <a href="https://www.linkedin.com/in/david-fekke-1913ba2/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'black' }}><FaLinkedin size={32}  style={{ padding: '5px' }} /></a> 
                         <a href="https://github.com/davidfekke/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'black' }}><FaGithub size={32}  style={{ padding: '5px' }} /></a>
-                        <a href="https://www.youtube.com/davidfekke/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'black' }}><FaYoutube size={32}  style={{ padding: '5px' }} /></a>
+                        <a href="https://www.youtube.com/channel/UC1TglgvYxS354qj7ZlmoUcA" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'black' }}><FaYoutube size={32}  style={{ padding: '5px' }} /></a>
                     </div>
                     <nav className={footerStyles.gridarea}>
                         <div>
@@ -24,20 +24,17 @@ export default () => {
                                     <strong>Connect</strong>
                                 </li>
                                 <li>
-                                    <Link to="blog">Blog</Link>
-                                </li>
-                                <li>
-                                    <ExtLink uri="https://twitter.com/davidfekke" name="Twitter" />
+                                    <ExtLink uri="https://twitter.com/polyglotengineer1" name="Twitter" />
                                 </li>
                                 <li>
                                     <ExtLink uri="https://www.linkedin.com/in/david-fekke-1913ba2/" name="Linkedin" />
                                 </li>
                                 <li>
-                                    <ExtLink uri="https://www.youtube.com/davidfekke/" name="Youtube" />    
+                                    <ExtLink uri="https://www.youtube.com/channel/UC1TglgvYxS354qj7ZlmoUcA" name="Youtube" />    
                                 </li>
                             </ul>
                         </div>
-                        <div>
+                        {/* <div>
                             <ul>
                                 <li>
                                     <strong>Products</strong>
@@ -55,14 +52,14 @@ export default () => {
                                     <Link to="/products/jaxnode">JaxNode App</Link>
                                 </li>
                             </ul>                            
-                        </div>
+                        </div> */}
                         <div>
                             <ul>
                                 <li>
                                     <strong>Sites</strong>
                                 </li>
                                 <li>
-                                    <ExtLink uri="https://www.jaxtechmeetups.com" name="Jax Tech Meetups" />
+                                    <ExtLink uri="https://www.craigpilots.org" name="Craig Airport Pilots Association" />
                                 </li>
                                 <li>
                                     <ExtLink uri="https://www.jaxnode.com" name="JaxNode" />
@@ -89,14 +86,11 @@ export default () => {
                                 <li>
                                     <Link to={`terms`}>Terms and Conditions</Link>
                                 </li>
-                                <li>
-                                    <a href="/rss.xml">RSS Feed</a>
-                                </li>
                             </ul>
                         </div>    
                     </nav>
                     <div style={{ textAlign: 'center', fontSize: 'small', paddingTop: '1rem'}}>
-                        <p style={{ fontWeight: '600' }}>Copyright 2020, David Fekke</p>
+                        <p style={{ fontWeight: '600' }}>Copyright 2020, Polyglot Engineer</p>
                     </div>
                 </div>
             </Container>
