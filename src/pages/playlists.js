@@ -25,10 +25,34 @@ export default () => {
               </div>
 
               <div style={{ display: 'block'}}>
+                <h1>Swift</h1>
+                <Youtubeplaylist list_id="PL1pnJRf1rXvjT2DJXSb9lw3mzRHI2Wrah" />{/* 89F2V0jdA_g oY1eDJGtjxE */}
+                <p style={{ fontSize: '1rem'}}>
+                Check out the Swift series.
+                </p>
+              </div>
+
+              <div style={{ display: 'block'}}>
                 <h1>Javascript</h1>
                 <Youtubeplaylist list_id="PL1pnJRf1rXvg28q4ihJ-_0qs8A9DM7pCi" />{/* 89F2V0jdA_g oY1eDJGtjxE */}
                 <p style={{ fontSize: '1rem'}}>
-                These are some of the presentations on Javascript from the <ExtLink uri="https://www.jaxnode.com" name="JaxNode user group" />. 
+                These are some of the presentations on Javascript. 
+                </p>
+              </div>
+
+              <div style={{ display: 'block'}}>
+                <h1>iOS Frameworks</h1>
+                <Youtubeplaylist list_id="PL1pnJRf1rXvhld8hxCeKH23mRp46FQHnu" />{/* 89F2V0jdA_g oY1eDJGtjxE */}
+                <p style={{ fontSize: '1rem'}}>
+                Check out the iOS Frameworks series. 
+                </p>
+              </div>
+
+              <div style={{ display: 'block'}}>
+                <h1>TypeScript</h1>
+                <Youtubeplaylist list_id="PL1pnJRf1rXvjOP7qc-Y15UH1qfq9I_Arc" />{/* 89F2V0jdA_g oY1eDJGtjxE */}
+                <p style={{ fontSize: '1rem'}}>
+                Check out the TypeScript series. 
                 </p>
               </div>
           </Article>
