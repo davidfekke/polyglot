@@ -8,6 +8,7 @@ import * as styles from "./navbar.module.css"
 const menuData = [
     { title: 'Home', link: '/'},
     { title: 'Playlists', link: '/playlists/' },
+    { title: 'Videos', link: '/videos/' },
     { title: 'About', link: '/about/' },
     { title: 'Contact', link: '/contact/' }
 ];

@@ -6,6 +6,7 @@ import Header from "../components/header.js"
 import Footer from "../components/footer.js"
 import Article from "../components/article.js"
 import MainHelmet from "../components/mainhelmet.js"
+import YoutubeItem from "../components/youtubeitem.js"
 
 
 const videolist = ({data, pageContext}) => {
@@ -25,11 +26,12 @@ const videolist = ({data, pageContext}) => {
                 <div style={{ display: 'block'}}>
                   {/* <Youtube id="oY1eDJGtjxE" /> */}
                   {videos.map( ({node}) => {
-                      const title = node.title;
+                        const title = node.title;
+                        const videoId = node.videoId;
+                        const description = node.description;
+        
                       return (
-                            <div id={title}>
-                                {`${title}`}
-                            </div>
+                            <YoutubeItem id={videoId} videoId={videoId} title={title} description={description} />
                       );
                   })}
                   <p style={{ fontSize: '2rem'}}>
