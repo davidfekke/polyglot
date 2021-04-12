@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Container from "./container.js"
 import { FaBars } from 'react-icons/fa';
 import Logo from "../images/pelogo.png"
-import styles from "./navbar.module.css"
+import * as styles from "./navbar.module.css"
 
 const menuData = [
     { title: 'Home', link: '/'},

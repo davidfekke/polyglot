@@ -1,5 +1,4 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
 import Layout from "../components/layout.js"
 import Navbar from "../components/navbar.js"
 import Header from "../components/header.js"
@@ -9,7 +8,7 @@ import MainHelmet from "../components/mainhelmet.js"
 import ExtLink from "../components/extlink.js"
 import Youtube from "../components/youtube.js"
 
-export default ({data}) => {
+const about = () => {
     return (
         <Layout>
             <MainHelmet title="Polyglot Engineer" />
@@ -41,18 +40,4 @@ export default ({data}) => {
     )
 }
 
-// export const query = graphql`
-//   query {
-//     file(relativePath: { eq: "DavidFekke.jpg" }) {
-//       id
-//       extension
-//       relativePath
-//       dir
-//       childImageSharp {
-//         fixed(width: 112, height: 112) {
-//             ...GatsbyImageSharpFixed
-//         }
-//       }
-//     }
-//   }
-// `
+export default about;

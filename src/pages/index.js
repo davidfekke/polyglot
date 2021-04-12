@@ -8,7 +8,7 @@ import Article from "../components/article.js"
 import MainHelmet from "../components/mainhelmet.js"
 import Youtube from "../components/youtube.js"
 
-export default () => {
+const index = () => {
   return (
       <Layout>
           <MainHelmet title="Polyglot Engineer" />
@@ -39,3 +39,5 @@ export default () => {
       </Layout>
   )
 }
+
+export default index;

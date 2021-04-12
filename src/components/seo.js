@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 
-export default (props) => {
+const seo = (props) => {
     const { data, facebook } = props;
     const postTitle = (data || {}).title;
     const postDescription = (data || {}).description;
@@ -40,3 +40,5 @@ export default (props) => {
             ]} />
     )
 }
+
+export default seo;

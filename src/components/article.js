@@ -1,7 +1,7 @@
 import React from "react"
 import Container from "./container.js"
 
-export default ({children}) => {
+const article = ({children}) => {
     return (
         <article>
             <Container>
@@ -10,3 +10,5 @@ export default ({children}) => {
         </article>
     )
 }
+
+export default article;

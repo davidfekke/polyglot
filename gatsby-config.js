@@ -3,7 +3,7 @@ module.exports = {
     title: `Polyglot Engineer`,
     description: `WebSite for the Polyglot Engineer channel`,
     author: `@davidfekke`,
-    twitterHandle: '@davidfekke',
+    twitterHandle: '@polyglotengine1',
     url: 'https://polyglotengineer.com',
     siteUrl: 'https://polyglotengineer.com',
     facebookAppId: '833529826996398'
@@ -29,6 +29,14 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/pelogo.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-source-youtube-v3`,
+      options: {
+        channelId: ['UC1TglgvYxS354qj7ZlmoUcA'],
+        apiKey: process.env.youtube_api_key, // Optional for public requests
+        maxVideos: 1000 // Defaults to 50
       },
     },
   ],

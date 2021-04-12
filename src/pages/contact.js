@@ -1,5 +1,5 @@
 import React from "react"
-import { navigateTo } from "gatsby-link"
+import { navigate } from "gatsby"
 import Layout from "../components/layout.js"
 import Navbar from "../components/navbar.js"
 import Header from "../components/header.js"
@@ -33,7 +33,7 @@ export default class Contact extends React.Component {
                 "form-name": form.getAttribute("name"),
                 ...this.state
             })
-        }).then(() => navigateTo(form.getAttribute("action")))
+        }).then(() => navigate(form.getAttribute("action")))
             .catch(error => alert(error));
     };
 
@@ -65,23 +65,23 @@ export default class Contact extends React.Component {
 
                             <input type="hidden" name="form-name" value="contact" onChange={this.handleChange} />
     
-                            <label for="firstname">First Name: </label>
+                            <label htmlFor="firstname">First Name: </label>
                             <input type="text" name="firstname" onChange={this.handleChange} />
                         
                     
-                            <label  for="lastname">Last Name: </label>
+                            <label htmlFor="lastname">Last Name: </label>
                             <input type="text" name="lastname" onChange={this.handleChange} />
                         
                         
-                            <label for="email">Email: </label>
+                            <label htmlFor="email">Email: </label>
                             <input type="text" name="email" onChange={this.handleChange} />
                         
                         
-                            <label for="phone">Phone: </label>
+                            <label htmlFor="phone">Phone: </label>
                             <input type="text" name="phone" onChange={this.handleChange} />
                         
                         
-                            <label for="message">Message: </label>
+                            <label htmlFor="message">Message: </label>
                             <textarea rows="7" name="message" onChange={this.handleChange}></textarea>
                             
                             <button type="submit">Send</button>

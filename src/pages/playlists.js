@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout.js"
 import Navbar from "../components/navbar.js"
 import Header from "../components/header.js"
@@ -9,7 +8,7 @@ import Article from "../components/article.js"
 import MainHelmet from "../components/mainhelmet.js"
 import ExtLink from "../components/extlink.js"
 
-export default () => {
+const playlist = () => {
     return (
         <Layout>
           <MainHelmet title="Polyglot Engineer Playlists" />
@@ -36,3 +35,5 @@ export default () => {
       </Layout>
     )
 }
+
+export default playlist;
