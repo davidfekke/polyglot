@@ -16,6 +16,7 @@ const index = () => {
           <Header headline="Welcome to the Polyglot Engineer" />
           <Article>
               <div style={{ display: 'block'}}>
+                <h2><a href="https://www.youtube.com/channel/UC1TglgvYxS354qj7ZlmoUcA/featured" target="_blank">Polyglot Engineer Channel</a></h2>
                 <Youtube id="oY1eDJGtjxE" />{/* 89F2V0jdA_g oY1eDJGtjxE */}
                 <p style={{ fontSize: '2rem'}}>
                 This site is for software engineers and novice programmers alike to learn language features of a specific language when transitioning from one programming language to another.
